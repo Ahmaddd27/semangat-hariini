@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penyemangat Hari Ini</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+            animation: fadeIn 1s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        h1 {
+            color: #4CAF50;
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .message {
+            font-size: 24px;
+            margin: 20px 0;
+            padding: 20px;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            background-color: #e8f5e9;
+            transition: transform 0.3s;
+        }
+
+        .message:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .surprise-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .surprise-button:hover {
+            background-color: #45a049;
+        }
+
+        .hidden-message {
+            display: none;
+            font-size: 20px;
+            margin-top: 20px;
+            color: #d32f2f;
+        }
+
+        .balloon {
+            display: none;
+            margin-top: 20px;
+            max-width: 300px; /* Atur ukuran maksimum gambar */
+            border-radius: 10px;
+            animation: fadeIn 1s;
+        }
+
+        .photos {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .photo {
+            margin: 0 10px;
+            border-radius: 10px;
+            max-width: 150px; /* Atur ukuran maksimum gambar */
+            transition: transform 0.3s;
+        }
+
+        .photo:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>Penyemangat Hari Ini</h1>
+    <div class="message">
+        "Setiap hari adalah kesempatan baru untuk mencapai impianmu. Jangan pernah menyerah, karena kamu lebih kuat dari yang kamu kira!"
+    </div>
+    <button class="surprise-button" onclick="showSurprise()">Klik untuk Kejutan!</button>
+    <div class="hidden-message" id="surpriseMessage">
+        🎉 "Kamu luar biasa! Ingat, setiap langkah kecil membawa kamu lebih dekat ke tujuanmu!" 🎉
+    </div>
+    <img src="https://example.com/balloon.png" alt="Balon Indah" class="balloon" id="balloonImage">
+    
+    <div class="photos">
+        <img src="https://example.com/photo1.jpg" alt="Foto 1" class="photo">
+        <img src="https://example.com/photo2.jpg" alt="Foto 2" class="photo">
+        <img src="https://example.com/photo3.jpg" alt="Foto 3" class="photo">
+    </div>
+
+    <div class="footer">
+        - Semangat selalu! 🌟
+    </div>
+
+    <script>
+        function showSurprise() {
+            document.getElementById("surpriseMessage").style.display = "block";
+            document.getElementById("balloonImage").style.display = "block"; // Menampilkan gambar balon
+        }
+    </script>
+</body>
+</html>
